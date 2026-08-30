@@ -1,32 +1,27 @@
-# Tower of Hanoi - Interactive Game in C
-
+# Torre de Hanói - Jogo Interativo em C
 ---
-
-## Gameplay Preview
-
+## Prévia do Jogo
 <img width="415" height="376" alt="image" src="https://github.com/user-attachments/assets/0a38e807-09dd-4284-9976-21067ff0c40c" />
 
-
 ---
+## Regras do Jogo
+A Torre de Hanói é composta por pinos e um conjunto de discos de tamanhos diferentes. O objetivo é mover toda a pilha de 4 discos do primeiro pino para o último pino, seguindo três regras rígidas:
 
-## Rules of the Game
-The Tower of Hanoi consists of pegs and a set of disks of different sizes. The objective is to move the entire stack of 4 disks from the first peg to the last peg, following three strict rules:
-1. Only one disk can be moved at a time.
-2. Each move consists of taking the upper disk from one of the stacks and placing it on top of another stack.
-3. No larger disk may be placed on top of a smaller disk.
+1. Apenas um disco pode ser movido de cada vez.
+2. Cada movimento consiste em retirar o disco do topo de uma das pilhas e colocá-lo no topo de outra pilha.
+3. Nenhum disco maior pode ser colocado sobre um disco menor.
 
-## Data Structures & Concepts Used
-* **Data Structure:** Dynamic Stack (Linked List-based Stack).
-* **Memory Management:** Dynamic allocation using `malloc()` and proper cleanup with `free()`.
-* **Visual Representation:** A custom CLI rendering system that prints the state of the game after every move.
+## Estruturas de Dados & Conceitos Utilizados
+* **Estrutura de Dados:** Pilha Dinâmica (Pilha baseada em Lista Encadeada).
+* **Gerenciamento de Memória:** Alocação dinâmica usando `malloc()` e liberação adequada com `free()`.
+* **Representação Visual:** Um sistema de renderização em CLI personalizado que exibe o estado do jogo após cada movimento.
 
-## How to Play on Linux
-
-Make sure you have the `gcc` compiler installed. In your terminal, run the following commands:
+## Como Jogar no Linux
+Certifique-se de ter o compilador `gcc` instalado. No seu terminal, execute os seguintes comandos:
 
 ```bash
-# 1. Compile the game
+# 1. Compile o jogo
 gcc -o hanoi_game hanoi_tower.c
-
-# 2. Run the executable
+# 2. Execute o programa
 ./hanoi_game
+```
